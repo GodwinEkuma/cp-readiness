@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Google Search</title>
+        <style>
+            .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 75px;
+            }
+            form{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                flex-direction: column;
+            }
+            .search-input{
+                padding: 15px;
+                margin: 25px 0;
+                width: 50%;
+                border: 1px solid #f1f1f1;
+                border-radius: 5px;
+            }
+            .search-input:hover{
+                box-shadow: 3px 3px 0 #F5F5F5;
+            }
+            .submit-input{
+                padding: 10px;
+                margin: 25px 10px;
+                background: #F5F5F5;
+                outline: none;
+                border: none;
+            }
+        </style>
+        <script src="main.js"></script>
+            
+    </head>
+    <body class="container">
+        <img src="../cta.png" alt="Google Search Logo">
+        <form onsubmit="searchGoogle()">
+            <input type="text" id="search-query" class="search-input">
+             <div>
+                <button type="button" onclick="searchGoogle()"  class="submit-input" >Google Search </button>
+                <button type="button" id="lucky"  class="submit-input">I'Am Feeling Lucky </button>
+             </div>
+        </form>
+        
+        <div>
+            Google offered in :
+            <a href="">Hausa</a>
+            <a href="">Igbo</a>
+            <a href="">Èdè Yorùbá</a>
+            <a href="">Pidgin</a>
+        </div>
+
+    </body>
+</html>
